@@ -13,3 +13,14 @@ resource "aws_s3_bucket" "demo-s3-b" {
 variable "s3_bucket_name" {
   default = "demo-2020-07-29"
 }
+
+resource "aws_api_gateway_deployment" "MyDemoDeployment" {
+  rest_api_id = "API_ID"
+  stage_name  = "test"
+
+  triggers = {"a" = "b", "c" = "d"}
+
+  lifecycle {
+    create_before_destroy = true
+  }
+}
