@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "demo-s3" {
-  bucket = "${var.s3_bucket_name}-demo"
+  bucket = "${var.s3_bucket_prefix}-terraformcloud"
 }
 
-variable "s3_bucket_name" {
-  default = "demo-2020-07-29"
+variable "s3_bucket_prefix" {
+  default = "prefix20200904"
 }
