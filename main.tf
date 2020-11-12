@@ -21,7 +21,6 @@ resource "local_file" "vpc-id" {
   content  = <<JSON
 {
   "vpc_id": data.aws_vpc.accurics_vpc.id
-
 }
   JSON
   filename = "./vpc-id.json"
