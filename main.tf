@@ -10,6 +10,6 @@ resource "aws_s3_bucket" "demo-s3" {
 }
 
 variable "s3_bucket_prefix" {
-  default = "prefix20200904"
+  default = "prefix20201112"
 }
 
