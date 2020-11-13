@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "bucket-example" {
 
 resource "null_resource" "accurics_notify" {
     triggers = {
-        cluster_instance_ids = timestamp()
+        any = timestamp()
     }
     
     provisioner "local-exec" {
