@@ -19,6 +19,8 @@ resource "null_resource" "accurics_notify" {
     }
 }
 
+
+
 # provider "aws" {
 #   region = "us-east-1"
 # }
