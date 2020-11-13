@@ -1,9 +1,7 @@
 #!/bin/sh
 
-curl --location --request POST 'http://localhost:8080/v1/api/env/e4bb48d4-ddab-477a-9dc4-9a2d91e91f0b/rescan' \
---header 'tenant-id: a24cbc6c-c061-4d15-85c7-215f329634a3' \
+curl --location --request POST 'http://localhost:8080/v1/api/env/44480c13-076e-4666-ad29-4aa7cb0a2f3c/rescan' \
 --header 'Content-Type: application/json' \
---header 'cookie: x-siac-session=8640b737-81fb-4d94-8f1e-ef6b9a6230a5' \
+--header 'cookie: x-siac-session=b2185afa-27da-4fc1-ad93-67c176666d59' \
 --data-raw ''
 
-echo "running" > exec.log
