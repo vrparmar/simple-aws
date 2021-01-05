@@ -1,0 +1,6 @@
+*.terraform
+*.DS_Store
+*config
+*accurics
+*accurics_report.html
+*accurics_report.json
