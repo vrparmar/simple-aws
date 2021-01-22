@@ -2,13 +2,9 @@ provider "aws" {
   region = "us-east-1"
 }
 
-# provider "null" {
-# }
-
 resource "aws_s3_bucket" "bucket-example" {
   bucket = "bucket-example-20201114"
 }
-
 
 
 # resource "null_resource" "accurics_notify" {
