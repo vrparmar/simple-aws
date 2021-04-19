@@ -15,7 +15,7 @@ resource "aws_security_group" "harshit_sg" {
     to_port     = 3020
     from_port   = 3020
     protocol    = "tcp"
-    cidr_blocks = ["192.164.0.0/24"]
+    cidr_blocks = ["192.164.0.0/25"]
   }
 
   ingress {
