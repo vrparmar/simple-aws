@@ -32,3 +32,35 @@ resource "aws_s3_bucket_policy" "harshit_bucket_policy" {
 }
 POLICY
 }
+
+resource "aws_security_group" "harshit_sg2" {
+  name        = "harshit_sg2"
+  description = "Used in the terraform2"
+  vpc_id      = "harshit-vpc2"
+
+  tags = {
+    Name = "harshit_sg2"
+  }
+
+  ingress {
+    to_port     = 4505
+    from_port   = 4505
+    protocol    = "tcp"
+    cidr_blocks = ["192.164.0.0/25"]
+  }
+
+  ingress {
+    to_port     = 3389
+    from_port   = 3389
+    protocol    = "tcp"
+    cidr_blocks = ["192.164.0.0/24"]
+  }
+
+  # outbound internet access
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
