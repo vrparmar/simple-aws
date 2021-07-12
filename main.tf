@@ -8,7 +8,7 @@ resource "aws_security_group" "harshit_sg" {
   vpc_id      = "harshit-vpc"
 
   tags = {
-    Name = "harshit_sg"
+    Name = "harshit_sg1"
   }
 
   ingress {
