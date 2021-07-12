@@ -5,10 +5,10 @@ provider "aws" {
 resource "aws_security_group" "harshit_sg" {
   name        = "harshit_sg"
   description = "Used in the terraform"
-  vpc_id      = "harshit1-vpc"
+  vpc_id      = "harshit-vpc"
 
   tags = {
-    Name = "harshit_sg1"
+    Name = "harshit_sg"
   }
 
   ingress {
