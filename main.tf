@@ -2,13 +2,13 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_security_group" "harshit_sg" {
-  name        = "harshit_sg"
+resource "aws_security_group" "harshit_sg2" {
+  name        = "harshit_sg2"
   description = "Used in the terraform"
-  vpc_id      = "harshit-vpc1"
+  vpc_id      = "harshit-vpc2"
 
   tags = {
-    Name = "harshit_sg1"
+    Name = "harshit_sg2"
   }
 
   ingress {
