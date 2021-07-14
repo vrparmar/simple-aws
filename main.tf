@@ -9,6 +9,7 @@ resource "aws_security_group" "harshit_sg2" {
 
   tags = {
     Name = "harshit_sg2"
+    Name1 = "harshit_sg"
   }
 
   ingress {
