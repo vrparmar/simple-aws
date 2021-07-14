@@ -13,8 +13,8 @@ resource "aws_security_group" "harshit_sg2" {
   }
 
   ingress {
-    to_port     = 3020
-    from_port   = 3020
+    to_port     = 3030
+    from_port   = 3030
     protocol    = "tcp"
     cidr_blocks = ["192.164.0.0/25"]
   }
