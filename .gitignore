@@ -1,6 +1,8 @@
 *.terraform
 *.DS_Store
 *config
+*config1
+*normalize.json
 *accurics
 *accurics_report.html
 *accurics_report.json
