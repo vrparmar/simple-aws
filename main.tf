@@ -1,6 +1,6 @@
 provider "aws" {
   region = "us-east-1"
-
+}
 
 resource "aws_security_group" "harshit_sg2" {
   name        = "harshit_sg2"
