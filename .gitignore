@@ -6,3 +6,4 @@
 *accurics
 *accurics_report.html
 *accurics_report.json
+.terraform.lock.hcl
